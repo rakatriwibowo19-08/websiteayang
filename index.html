@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Hidup Sehat — Fitria Nur Azizah</title>
+  <meta name="description" content="Program hidup sehat khusus untuk Fitria Nur Azizah, disesuaikan dengan rutinitas kerja, perjalanan KRL, dan aktivitas harian." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+<header class="header">
+  <nav class="navbar container">
+    <a href="#" class="logo">
+      <div class="logo-circle"></div>
+      <div class="logo-text">
+        <span>Hidup</span>
+        <strong>Sehat • Fitria</strong>
+      </div>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="#status">Status</a></li>
+      <li><a href="#rutinitas">Rutinitas</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#tips">Tips</a></li>
+    </ul>
+    <button class="menu-toggle"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-content">
+      <div class="hero-badge">💖 Panduan Pribadi Fitria</div>
+      <h1>Program <span>Hidup Sehat</span></h1>
+      <p>Halo Fitria Nur Azizah 💕 — program kesehatan ini dibuat khusus mengikuti rutinitas kerja, perjalanan KRL, waktu ibadah, dan aktivitas harianmu agar lebih mudah dijalankan secara konsisten.</p>
+      <div class="hero-buttons">
+        <a href="#rutinitas" class="btn btn-primary">Lihat Rutinitas</a>
+        <a href="#menu" class="btn btn-outline">Menu Mingguan</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-header">Ringkasan Program</div>
+      <div class="hero-stat-grid">
+        <div class="hero-stat"><h2>67</h2><span>kg</span><small>Berat Saat Ini</small></div>
+        <div class="hero-stat"><h2>156</h2><span>cm</span><small>Tinggi Badan</small></div>
+        <div class="hero-stat"><h2>27.5</h2><span>BMI</span><small>Indeks Massa Tubuh</small></div>
+        <div class="hero-stat active"><h2>55</h2><span>kg</span><small>Target Ideal</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main>
+
+<section id="status" class="section">
+  <div class="container">
+    <div class="section-title">
+      <span class="subtitle">01 • STATUS KESEHATAN</span>
+      <h2>Target yang Realistis, <span>Bukan Instan.</span></h2>
+      <p>Fokus pada perubahan kecil yang konsisten. Dari 67 kg menuju 55 kg — kurang lebih 12 kg dalam 4–6 bulan.</p>
+    </div>
+    <div class="status-grid">
+      <article class="status-card">
+        <div class="status-icon">📉</div>
+        <h3>Turun 0.5–1 kg / Minggu</h3>
+        <p>Penurunan berat badan yang aman dan berkelanjutan menurut rekomendasi kesehatan.</p>
+      </article>
+      <article class="status-card">
+        <div class="status-icon">🎯</div>
+        <h3>Target Akhir 55 kg</h3>
+        <p>Dari 67 kg menuju 55 kg secara bertahap. Setelah tercapai dipertahankan dengan kebiasaan baru.</p>
+      </article>
+      <article class="status-card">
+        <div class="status-icon">🍽️</div>
+        <h3>1.400–1.600 Kalori</h3>
+        <p>Defisit kalori sehat agar tetap berenergi untuk bekerja dan beraktivitas setiap hari.</p>
+      </article>
+      <article class="status-card">
+        <div class="status-icon">🏃</div>
+        <h3>Olahraga 5 Hari</h3>
+        <p>Jalan cepat atau jogging 30–40 menit setiap pagi sebelum memulai aktivitas.</p>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="section bmi-section">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span class="subtitle">02 • BMI CALCULATOR</span>
+            <h2>Hitung <span>Body Mass Index</span></h2>
+            <p>
+                Ketahui apakah berat badanmu sudah ideal berdasarkan tinggi badan.
+            </p>
+        </div>
+
+        <div class="bmi-card">
+
+            <div class="bmi-left">
+
+                <div class="input-group">
+                    <label>⚖️ Berat Badan (kg)</label>
+                    <input type="number" id="weight" value="67">
+                </div>
+
+                <div class="input-group">
+                    <label>📏 Tinggi Badan (cm)</label>
+                    <input type="number" id="height" value="156">
+                </div>
+
+                <button id="calculateBMI" class="btn btn-primary">
+                    Hitung BMI
+                </button>
+
+            </div>
+
+            <div class="bmi-right">
+
+                <div class="bmi-circle">
+
+                    <span id="bmiValue">27.5</span>
+
+                </div>
+
+                <h3 id="bmiStatus">Overweight</h3>
+
+                <p id="bmiDesc">
+
+                    Berat badan berada di atas kisaran ideal.
+                    Tetap semangat menuju target 55 kg. 💕
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section id="calendar" class="section calendar-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span class="subtitle">
+                04 • HEALTHY CALENDAR
+            </span>
+
+            <h2>
+                Konsistensi <span>Setiap Hari</span>
+            </h2>
+
+            <p>
+                Perjalanan menuju 55 kg dimulai dari kebiasaan kecil yang dilakukan setiap hari.
+            </p>
+
+        </div>
+
+        <!-- SUMMARY -->
+
+        <div class="calendar-summary">
+
+            <div class="summary-card">
+
+                <h4>🔥 Current Streak</h4>
+
+                <h2 id="streak">12</h2>
+
+                <span>Hari</span>
+
+            </div>
+
+            <div class="summary-card">
+
+                <h4>🏆 Target Bulan</h4>
+
+                <h2>24/30</h2>
+
+                <span>Hari Aktif</span>
+
+            </div>
+
+            <div class="summary-card">
+
+                <h4>📈 Progress</h4>
+
+                <h2 id="progressMonth">80%</h2>
+
+                <span>Bulan Ini</span>
+
+            </div>
+
+        </div>
+
+        <!-- CALENDAR -->
+
+        <div class="calendar-card">
+
+            <div class="calendar-header">
+
+                <h3 id="monthYear"></h3>
+
+            </div>
+
+            <div class="weekdays">
+
+                <span>Min</span>
+                <span>Sen</span>
+                <span>Sel</span>
+                <span>Rab</span>
+                <span>Kam</span>
+                <span>Jum</span>
+                <span>Sab</span>
+
+            </div>
+
+            <div id="calendar" class="calendar-grid"></div>
+
+            <div class="calendar-legend">
+
+                <span><i class="legend success"></i> Semua Target</span>
+
+                <span><i class="legend warning"></i> Sebagian</span>
+
+                <span><i class="legend empty"></i> Belum</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="highlight">
+  <div class="container">
+    <div class="highlight-card">
+      <div class="highlight-left">
+        <span class="mini-title">ESTIMASI</span>
+        <h2>Berat Ideal 55 kg Bisa Dicapai Dalam 4–6 Bulan</h2>
+        <p>Dengan menjaga pola makan, tidur cukup, olahraga rutin, serta konsisten menjalankan aktivitas harian. Sayang sama diri sendiri itu langkah pertama 💖</p>
+      </div>
+      <div class="highlight-right">
+        <div class="circle-progress"><span>55 kg</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="rutinitas" class="section">
+    <div class="container">
+
+        <div class="section-title">
+            <span class="subtitle">02 • RUTINITAS HARIAN</span>
+            <h2>Jadwal Sehari Penuh</h2>
+            <p>
+                Jalankan perlahan namun konsisten. Rutinitas sederhana jauh lebih baik
+                daripada program berat yang hanya bertahan beberapa hari.
+            </p>
+        </div>
+
+        <div class="timeline">
+
+            <!-- PAGI -->
+            <div class="timeline-group">
+                <h3>🌅 Pagi</h3>
+
+                <div class="timeline-item sholat">
+                    <div class="timeline-time">04.30</div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge">🌙 Sholat</span>
+                        <h4>Bangun & Sholat Subuh</h4>
+                        <p>Bangun, berwudhu, sholat Subuh, lalu minum dua gelas air putih sebelum memulai aktivitas.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item olahraga">
+                    <div class="timeline-time">05.00</div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge">🏃 Olahraga</span>
+                        <h4>Jalan Cepat / Jogging</h4>
+                        <p>Jalan cepat atau jogging selama 30–40 menit di sekitar komplek.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item makan">
+                    <div class="timeline-time">05.45</div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge">🍽️ Sarapan</span>
+                        <h4>Sarapan Sehat</h4>
+                        <p>Oatmeal, telur rebus, roti gandum, atau buah sebagai sumber energi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PERJALANAN -->
+            <div class="timeline-group">
+                <h3>🚗 Perjalanan</h3>
+
+                <div class="timeline-item perjalanan">
+                    <div class="timeline-time">07.30</div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge">🏍️ Naik Motor</span>
+                        <h4>Rumah → Kantor</h4>
+                        <p>Berangkat menuju Kantor Kejaksaan Negeri.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item perjalanan">
+                    <div class="timeline-time">07.50</div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge">🏢 Sampai Kantor</span>
+                        <h4>Tiba di Kantor</h4>
+                        <p>Berjalan dari area parkir menuju ruang kerja.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KERJA -->
+            <div class="timeline-group">
+                <h3>💻 Kerja</h3>
+
+                <div class="timeline-item kerja">
+                    <div class="timeline-time">08.00</div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge">💻 Kerja</span>
+                        <h4>Mulai Aktivitas</h4>
+                        <p>Minum air secara berkala dan berdiri setiap satu jam selama 3–5 menit.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item sholat">
+                    <div class="timeline-time">12.00</div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge">🕌 Dzuhur</span>
+                        <h4>Sholat Dzuhur</h4>
+                        <p>Manfaatkan perjalanan menuju musala untuk berjalan kaki dan peregangan ringan.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item makan">
+                    <div class="timeline-time">12.20</div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge">🍱 Makan Siang</span>
+                        <h4>Bekal Sehat</h4>
+                        <p>Protein, sayur, dan nasi secukupnya. Hindari gorengan dan minuman manis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SORE -->
+            <div class="timeline-group">
+                <h3>🌇 Sore</h3>
+
+                <div class="timeline-item sholat">
+                    <div class="timeline-time">15.15</div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge">🕌 Ashar</span>
+                        <h4>Sholat Ashar</h4>
+                        <p>Sholat Ashar kemudian lanjut bekerja sambil melakukan peregangan ringan.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item kerja">
+                    <div class="timeline-time">17.00</div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge">🏢 Pulang</span>
+                        <h4>Selesai Bekerja</h4>
+                        <p>Rapikan meja kerja dan persiapkan perjalanan pulang.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item perjalanan">
+                    <div class="timeline-time">17.20</div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge">🚶 Jalan Kaki</span>
+                        <h4>Menuju Parkiran</h4>
+                        <p>Berjalan dari kantor menuju area parkir motor.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item perjalanan">
+                    <div class="timeline-time">17.30</div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge">🏍️ Naik Motor</span>
+                        <h4>Pulang ke Rumah</h4>
+                        <p>Perjalanan dari kantor menuju rumah.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- MALAM -->
+            <div class="timeline-group">
+                <h3>🌙 Malam</h3>
+
+                <div class="timeline-item sholat">
+                    <div class="timeline-time">18.20</div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge">🌆 Maghrib</span>
+                        <h4>Sholat Maghrib</h4>
+                        <p>Sholat Maghrib, kemudian berdzikir dan murojaah singkat.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item makan">
+                    <div class="timeline-time">18.45</div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge">🥗 Makan Malam</span>
+                        <h4>Porsi Ringan & Bergizi</h4>
+                        <p>Perbanyak sayur dan protein, kurangi karbohidrat berlebih.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item sholat">
+                    <div class="timeline-time">19.30</div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge">🌙 Isya</span>
+                        <h4>Sholat Isya</h4>
+                        <p>Sholat Isya lalu quality time bersama suami. 💕</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item olahraga">
+                    <div class="timeline-time">20.00</div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge">🧘 Stretching</span>
+                        <h4>Peregangan Ringan</h4>
+                        <p>Stretching selama 10–15 menit untuk merilekskan tubuh.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item kerja">
+                    <div class="timeline-time">21.30</div>
+                    <div class="timeline-content">
+                        <span class="timeline-badge">🛌 Tidur</span>
+                        <h4>Istirahat</h4>
+                        <p>Matikan layar 30 menit sebelum tidur dan istirahat selama 7–8 jam.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="progress-section">
+  <div class="container">
+    <div class="progress-card">
+      <div class="progress-header">
+        <div>
+          <span class="subtitle">DAILY TRACKER</span>
+          <h2>Progress Hari Ini</h2>
+          <p>Centang aktivitas yang sudah selesai dilakukan hari ini.</p>
+        </div>
+        <div class="progress-circle"><span id="progressPercent">0%</span></div>
+      </div>
+      <div class="checklist">
+        <label class="check-item"><input type="checkbox" class="task" /><span>🌙 Bangun & Sholat Subuh</span></label>
+        <label class="check-item"><input type="checkbox" class="task" /><span>🏃 Olahraga Pagi</span></label>
+        <label class="check-item"><input type="checkbox" class="task" /><span>🥗 Sarapan Sehat</span></label>
+        <label class="check-item"><input type="checkbox" class="task" /><span>💧 Minum 2 Liter Air</span></label>
+        <label class="check-item"><input type="checkbox" class="task" /><span>🍱 Bekal Sehat</span></label>
+        <label class="check-item"><input type="checkbox" class="task" /><span>🚫 Tidak Minum Manis</span></label>
+        <label class="check-item"><input type="checkbox" class="task" /><span>🧘 Stretching Malam</span></label>
+        <label class="check-item"><input type="checkbox" class="task" /><span>🛌 Tidur Sebelum 21.30</span></label>
+      </div>
+      <div class="progress-bar"><div id="progressFill"></div></div>
+      <div class="progress-info">
+        <span>Target Harian</span>
+        <strong id="progressText">0 / 8 Selesai</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="section meal-section">
+  <div class="container">
+    <div class="section-title">
+      <span class="subtitle">03 • MENU MINGGUAN</span>
+      <h2>Meal Plan <span>7 Hari</span></h2>
+      <p>Menu sederhana, hemat, mudah dibuat, dan cocok dibawa bekerja.</p>
+    </div>
+    <div class="meal-grid">
+
+      <article class="meal-card">
+        <div class="meal-day">Senin</div>
+        <div class="meal-body">
+          <div class="meal-item"><h4>🍳 Sarapan</h4><p>Oatmeal + Pisang + Telur Rebus</p></div>
+          <div class="meal-item"><h4>🍱 Makan Siang</h4><p>Nasi Merah, Ayam Panggang, Brokoli</p></div>
+          <div class="meal-item"><h4>🥗 Makan Malam</h4><p>Sup Ayam + Sayuran</p></div>
+          <div class="meal-calories">±1450 kcal</div>
+        </div>
+      </article>
+
+      <article class="meal-card">
+        <div class="meal-day">Selasa</div>
+        <div class="meal-body">
+          <div class="meal-item"><h4>🍞 Sarapan</h4><p>Roti Gandum + Telur + Susu Low Fat</p></div>
+          <div class="meal-item"><h4>🍗 Makan Siang</h4><p>Ayam Rebus + Tempe + Sayur</p></div>
+          <div class="meal-item"><h4>🥣 Makan Malam</h4><p>Salad Ayam</p></div>
+          <div class="meal-calories">±1500 kcal</div>
+        </div>
+      </article>
+
+      <article class="meal-card">
+        <div class="meal-day">Rabu</div>
+        <div class="meal-body">
+          <div class="meal-item"><h4>🥣 Sarapan</h4><p>Greek Yogurt + Buah</p></div>
+          <div class="meal-item"><h4>🍱 Makan Siang</h4><p>Ikan Panggang + Sayur + Nasi Merah</p></div>
+          <div class="meal-item"><h4>🥗 Makan Malam</h4><p>Tumis Sayur + Tahu</p></div>
+          <div class="meal-calories">±1430 kcal</div>
+        </div>
+      </article>
+
+      <article class="meal-card">
+        <div class="meal-day">Kamis</div>
+        <div class="meal-body">
+          <div class="meal-item"><h4>🍳 Sarapan</h4><p>Oatmeal + Apel</p></div>
+          <div class="meal-item"><h4>🍗 Makan Siang</h4><p>Dada Ayam + Sayuran Rebus</p></div>
+          <div class="meal-item"><h4>🥣 Makan Malam</h4><p>Sup Jagung Ayam</p></div>
+          <div class="meal-calories">±1480 kcal</div>
+        </div>
+      </article>
+
+      <article class="meal-card">
+        <div class="meal-day">Jumat</div>
+        <div class="meal-body">
+          <div class="meal-item"><h4>🍞 Sarapan</h4><p>Roti Gandum + Alpukat</p></div>
+          <div class="meal-item"><h4>🍱 Makan Siang</h4><p>Ayam Bakar + Lalapan</p></div>
+          <div class="meal-item"><h4>🥗 Makan Malam</h4><p>Capcay Sayur</p></div>
+          <div class="meal-calories">±1470 kcal</div>
+        </div>
+      </article>
+
+      <article class="meal-card">
+        <div class="meal-day">Sabtu</div>
+        <div class="meal-body">
+          <div class="meal-item"><h4>🥣 Sarapan</h4><p>Oat + Strawberry</p></div>
+          <div class="meal-item"><h4>🍗 Makan Siang</h4><p>Ikan Bakar + Sayur</p></div>
+          <div class="meal-item"><h4>🥗 Makan Malam</h4><p>Salad Tuna</p></div>
+          <div class="meal-calories">±1460 kcal</div>
+        </div>
+      </article>
+
+      <article class="meal-card">
+        <div class="meal-day">Minggu</div>
+        <div class="meal-body">
+          <div class="meal-item"><h4>🍳 Sarapan</h4><p>Telur Rebus + Buah</p></div>
+          <div class="meal-item"><h4>🍱 Makan Siang</h4><p>Chicken Steak + Sayur</p></div>
+          <div class="meal-item"><h4>🥗 Makan Malam</h4><p>Sup Sayuran</p></div>
+          <div class="meal-calories">±1440 kcal</div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="tips" class="section tips-section">
+  <div class="container">
+    <div class="section-title">
+      <span class="subtitle">04 • HEALTH TIPS</span>
+      <h2>Kebiasaan Kecil, <span>Hasil Besar.</span></h2>
+      <p>Tidak harus sempurna. Yang paling penting adalah konsisten setiap hari 💕</p>
+    </div>
+    <div class="tips-grid">
+      <article class="tip-card"><div class="tip-icon">🌙</div><h3>Tidur 7–8 Jam</h3><p>Tidur cukup membantu pemulihan tubuh, menjaga hormon lapar, dan meningkatkan fokus.</p></article>
+      <article class="tip-card"><div class="tip-icon">💧</div><h3>Minum Air</h3><p>Minimal 2 liter setiap hari agar tubuh tetap terhidrasi dengan baik.</p></article>
+      <article class="tip-card"><div class="tip-icon">🚶</div><h3>Banyak Bergerak</h3><p>Berdiri atau berjalan ringan setiap satu jam selama bekerja.</p></article>
+      <article class="tip-card"><div class="tip-icon">🥗</div><h3>Perbanyak Sayur</h3><p>Setengah isi piring sebaiknya terdiri dari sayuran dan buah segar.</p></article>
+      <article class="tip-card"><div class="tip-icon">🚫</div><h3>Kurangi Gula</h3><p>Hindari minuman manis, boba, dan makanan tinggi gula.</p></article>
+      <article class="tip-card"><div class="tip-icon">⚖️</div><h3>Timbang Seminggu Sekali</h3><p>Pantau perkembangan tanpa perlu menimbang setiap hari.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="motivation">
+  <div class="container">
+    <div class="motivation-card">
+      <h2>💖 Untuk Ayang...</h2>
+      <p>Perubahan besar berasal dari kebiasaan kecil yang dilakukan setiap hari. Tidak perlu sempurna, yang penting konsisten. Aku selalu dukung kamu, sayang 💕</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+                    💖
+                </div>
+
+                <h3>Program Hidup Sehat</h3>
+
+                <p>
+                    Dibuat khusus untuk Fitria Nur Azizah agar perjalanan menuju
+                    hidup sehat menjadi lebih mudah, teratur, dan menyenangkan.
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h4>Navigasi</h4>
+
+                <a href="#status">Status</a>
+                <a href="#rutinitas">Rutinitas</a>
+                <a href="#menu">Meal Plan</a>
+                <a href="#tips">Tips</a>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h4>Target</h4>
+
+                <p>🎯 Berat Ideal 55 kg</p>
+                <p>🥗 1.400–1.600 Kalori</p>
+                <p>🏃 Olahraga 5x/Minggu</p>
+                <p>💧 Air Putih 2 Liter</p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h4>Motivasi</h4>
+
+                <p>
+                    "Sedikit demi sedikit,
+                    lama-lama menjadi sehat."
+                </p>
+
+                <div class="footer-heart">
+
+                    ❤️ ❤️ ❤️
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © <span id="year"></span>
+                Program Hidup Sehat • Dibuat dengan ❤️ oleh Raka untuk Fitria.
+
+            </p>
+
+            <button id="backToTop">
+
+                ↑
+
+            </button>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</main>
+
+<script src="/script.js"></script>
+</body>
+</html>
